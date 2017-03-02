@@ -1,39 +1,26 @@
-var port = process.env.PORT || 3000,
-    http = require('http'),
-    fs = require('fs'),
-    html = fs.readFileSync('index.html');
+var express = require('express');
+var app = express();
+var fs = require('fs');
+var path = require('path');
 
-var log = function(entry) {
-    fs.appendFileSync('/tmp/sample-app.log', new Date().toISOString() + ' - ' + entry + '\n');
-};
+app.set('port', (process.env.PORT || 3000));
 
-var server = http.createServer(function (req, res) {
-    if (req.method === 'POST') {
-        var body = '';
+app.use(express.static(path.join(__dirname , 'public')));
 
-        req.on('data', function(chunk) {
-            body += chunk;
-        });
+// views is directory for all template files
+app.set('views', path.join(__dirname , 'views'));
+app.set('public', path.join(__dirname , 'public'));
+app.set('view engine', 'ejs');
 
-        req.on('end', function() {
-            if (req.url === '/') {
-                log('Received message: ' + body);
-            } else if (req.url = '/scheduled') {
-                log('Received task ' + req.headers['x-aws-sqsd-taskname'] + ' scheduled at ' + req.headers['x-aws-sqsd-scheduled-at']);
-            }
-
-            res.writeHead(200, 'OK', {'Content-Type': 'text/plain'});
-            res.end();
-        });
-    } else {
-        res.writeHead(200);
-        res.write(html);
-        res.end();
-    }
+app.get('/', function(request, response) {
+  response.redirect('/index');
 });
 
-// Listen on port 3000, IP defaults to 127.0.0.1
-server.listen(port);
+app.get('/:type', function(request, response) {
+    reqType = request.params.type
+    response.render(path.join('pages', reqType), {});
+});
 
-// Put a friendly message on the terminal
-console.log('Server running at http://127.0.0.1:' + port + '/');
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
