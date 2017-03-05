@@ -33,7 +33,7 @@ function get_blogs_info(){
 }
 
 app.get('/', function(request, response) {
-  response.redirect('/index');
+  response.render(path.join('pages', 'index'), {});;
 });
 
 app.get('/:type', function(request, response) {
