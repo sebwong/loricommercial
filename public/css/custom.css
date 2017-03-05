@@ -1,0 +1,42 @@
+#about-title {
+  margin: 50px 0px 0px 0px;
+  font-family: Raleway, serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+#contact-title {
+  font-family: Raleway, sans-serif; 
+  font-size: 50px; 
+  color: #333; 
+  text-align: center; 
+  margin-top:100px;
+}
+
+.text {
+  text-align: center;
+  display: block;
+  margin: 2em;
+}
+
+.icon {
+  margin: auto;
+  display: block;
+}
+
+.line {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 40%;
+  margin: auto;
+  display: block;
+}
+
+#form {
+  margin: 10em;  
+}
+
+#submit {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,35 @@
+<% include ../partials/header.ejs %>
+<body class="homepage">
+  <div id="page-wrapper">
+    <% include ../partials/nav.ejs %>
+    <center><p id="contact-title"> Contact Us </p></center>
+    <center><img class="line" src="/images/line1.png"></center>
+
+    <img class="icon" src="/images/mediakit.png" alt="media kit">
+
+    <center><p class="text" style="font-size: 18px; margin-bottom: 2px">We'd love to hear from you!</p>
+    <p class="text">To request a media kit please contact: 
+    <a href="mailto:media@loricommercialinsider.com">media@loricommercialinsider.com</a></p></center>
+
+    <img class="icon" src="/images/paperplane.png" alt="send, deliver" style="margin-top:70px">
+
+    <center><p class="text"> For more information or any other inquiries please fill out the form below:</p></center>
+
+    <script src="js/contact.js"></script>
+    <form method="post" action="https://formspree.io/contactuslori@gmail.com" id="form">
+
+      <input id="name" name="name" type="text" placeholder="NAME"/>
+      <input id="email" name="email" type="text" placeholder="E-MAIL"/>
+      <input id="phone" name="phone" type="text" placeholder="PHONE NUMBER"/>
+      <input id="subject" name="subject" type="text" placeholder="SUBJECT"/>
+      <textarea id="message" name="message" type="text" placeholder="MESSAGE"></textarea>
+      <input type="hidden" name="_next" value="http://www.loricommercialinsider.com/thankyou.html"/>
+      <input type="hidden" name="_subject" value="Contact Form Submission" />
+      <input id="submit" name="submit" type="submit" value="GO!"/>
+
+    </form>
+
+    <div class="footer"> &#169; LORI Commercial Insider </div>
+
+  </div>
+<% include ../partials/footer.ejs %>
