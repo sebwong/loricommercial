@@ -1,0 +1,17 @@
+<% include ../partials/header.ejs %>
+
+<!-- Content -->
+<body class="homepage">
+	<div id="page-wrapper">
+		<% include ../partials/nav.ejs %>
+		<!-- Main -->
+		<div class="wrapper style1">
+		<% blogs_list.forEach(blog_map => { %>
+			<article class="thumb">
+				<a href="/<%= blog_map['File']%>"> <h3><%= blog_map['Title'] %></h3> </a>
+				<p><%= blog_map['File']%></p>
+				<p><%= blog_map['Date']%></p>
+				<p><%= blog_map['Excerpt']%></p>
+				<img src=<%= blog_map['Image']%> alt="">
+			</article>
+		<% }) %>
