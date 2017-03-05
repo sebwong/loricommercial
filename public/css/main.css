@@ -2096,7 +2096,7 @@
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
+		background-image: url("../../images/home.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2254,10 +2254,13 @@
 				-webkit-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				-ms-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+				background: rgba(255, 255, 255, 0.35);
+				color:  #000;
+				font-weight: bold
 			}
 
 				#nav > ul > li.active {
-					border-color: rgba(192, 192, 192, 0.35);
+					border-color: rgba(192, 192, 192, 0.45);
 				}
 
 				#nav > ul > li > a, #nav > ul > li > span {
