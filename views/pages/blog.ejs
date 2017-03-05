@@ -2,16 +2,38 @@
 
 <!-- Content -->
 <body class="homepage">
+	<div class="container">
 	<div id="page-wrapper">
 		<% include ../partials/nav.ejs %>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
 		<!-- Main -->
-		<div class="wrapper style1">
-		<% blogs_list.forEach(blog_map => { %>
-			<article class="thumb">
-				<a href="/<%= blog_map['File']%>"> <h3><%= blog_map['Title'] %></h3> </a>
-				<p><%= blog_map['File']%></p>
-				<p><%= blog_map['Date']%></p>
-				<p><%= blog_map['Excerpt']%></p>
-				<img src=<%= blog_map['Image']%> alt="">
-			</article>
-		<% }) %>
+		<div class="row wrapper style1"">
+		<!-- Tweets -->
+			<section class="8u 12u(mobile)">
+				<ul class="divided">
+					<% blogs_list.forEach(blog_map => { %>
+						<li>
+							<div class="row"">
+								<section class="8u 12u(mobile)">
+									<img src=<%= blog_map['Image']%> alt="">
+								</section>
+								<section class="4u 12u(mobile) ">
+									<br/>
+									<a href="/<%= blog_map['File']%>"> <h3><%= blog_map['Title'] %></h3> </a>
+									<p><%= blog_map['Date']%></p>
+									<p><%= blog_map['File']%></p>
+									<p><%= blog_map['Excerpt']%></p>
+								</section>
+							</div>
+							
+						</li>
+					<% }) %>
+				</ul>
+			</section>
+		</div>
+	</div>
+<% include ../partials/footer.ejs%>
