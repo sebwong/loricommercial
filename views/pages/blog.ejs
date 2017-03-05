@@ -5,27 +5,23 @@
 	<div class="container">
 	<div id="page-wrapper">
 		<% include ../partials/nav.ejs %>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
+    
+    <p id="contact-title"> Blog </p>
+    <img class="line" src="/images/line1.png">  
 		<!-- Main -->
-		<div class="row wrapper style1"">
-		<!-- Tweets -->
-			<section class="8u 12u(mobile)">
+		<div class="row wrapper style2">
+			<section class="11u 10u(mobile)">
 				<ul class="divided">
 					<% blogs_list.forEach(blog_map => { %>
 						<li>
-							<div class="row"">
-								<section class="8u 12u(mobile)">
+							<div class="row">
+								<section class="6u 10u(mobile)">
 									<img src=<%= blog_map['Image']%> alt="">
 								</section>
-								<section class="4u 12u(mobile) ">
+								<section class="4u 10u(mobile) ">
 									<br/>
 									<a href="/<%= blog_map['File']%>"> <h3><%= blog_map['Title'] %></h3> </a>
 									<p><%= blog_map['Date']%></p>
-									<p><%= blog_map['File']%></p>
 									<p><%= blog_map['Excerpt']%></p>
 								</section>
 							</div>

@@ -13,6 +13,13 @@
   margin-top:100px;
 }
 
+#blog-title {
+  margin: 100px 0px 0px 0px;
+  font-family: Raleway, serif;
+  font-size: 50px;
+  text-align: center;
+}
+
 .text {
   text-align: center;
   display: block;
