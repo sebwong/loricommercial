@@ -47,3 +47,18 @@
   display: block;
   width: 100%;
 }
+
+.privacy-text {
+  font-family: Open Sans; 
+  font-size: 12px; 
+  margin: 40px 100px 20px 100px; 
+  text-align:left;
+}
+
+.privacy-header b {
+  font-family: Open Sans; 
+  font-size:14px; 
+  margin: 20px 100px 0px 100px; 
+  text-align:left;
+  color: #b3aca7;
+}
