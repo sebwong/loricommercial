@@ -3,7 +3,7 @@
 [Download](https://nodejs.org/en/download/) and install node.
 
 ### Clone this repo
-``` git clone git@github.com:r48patel/lori-commercial.git ```
+``` git clone git@github.com:sebwong/lori-commercial.git ```
 
 ### Navigate to the dir
 ``` cd lori-commertial ```
