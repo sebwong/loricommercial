@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 function get_blogs_info(){
 	blogs_list=[]
 	file = path.join('views', 'pages', 'blog_list');
-	file_info = fs.readFileSync(file).toString().split('\n')
+	file_info = fs.readFileSync(file).toString().split('\r\n')
 	var blog_info = {}
 	file_info.forEach(line => {
 		if (line == '-') {
