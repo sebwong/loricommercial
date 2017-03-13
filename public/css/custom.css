@@ -1,21 +1,21 @@
 #about-title {
-  margin: 50px 0px 0px 0px;
-  font-family: Raleway, serif;
+  margin: 0px 0px 0px 0px;
+  font-family: Raleway, sans-serif;
   font-size: 50px;
   text-align: center;
 }
 
 #contact-title {
-  font-family: Raleway, sans-serif; 
-  font-size: 50px; 
-  color: #333; 
-  text-align: center; 
-  margin-top:100px;
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  color: #333;
+  text-align: center;
+  margin-top:150px;
 }
 
 #blog-title {
-  margin: 100px 0px 0px 0px;
-  font-family: Raleway, serif;
+  margin: 150px 0px 0px 0px;
+  font-family: Raleway, sans-serif;
   font-size: 50px;
   text-align: center;
 }
@@ -40,7 +40,7 @@
 }
 
 #form {
-  margin: 10em;  
+  margin: 10em;
 }
 
 #submit {
@@ -49,16 +49,25 @@
 }
 
 .privacy-text {
-  font-family: Open Sans; 
-  font-size: 12px; 
-  margin: 40px 100px 20px 100px; 
+  font-family: Open Sans;
+  font-size: 12px;
+  margin: 40px 100px 20px 100px;
   text-align:left;
 }
 
 .privacy-header b {
-  font-family: Open Sans; 
-  font-size:14px; 
-  margin: 20px 100px 0px 100px; 
+  font-family: Open Sans;
+  font-size:14px;
+  margin: 20px 100px 0px 100px;
   text-align:left;
   color: #b3aca7;
 }
+
+ .logo {
+   border-radius: 5%;
+   max-width: 40%;
+ }
+
+ .nav-logo {
+   max-width: 15%;
+ }

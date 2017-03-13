@@ -21,11 +21,13 @@ function get_blogs_info(){
 	var blog_info = {}
 	file_info.forEach(line => {
 		if (line == '-') {
+			console.log (123);
 			blogs_list.push(blog_info)
 			blog_info = {}
 		}
 		else {
 			line_split = line.split(':')
+			console.log (line_split)
 			blog_info[line_split[0].trim()] = line_split[1].trim()
 		}
 	})
