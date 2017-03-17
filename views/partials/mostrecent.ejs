@@ -1,0 +1,18 @@
+<div class="4u 12u(mobile)" id="sidebar">
+  <section>
+    <header>
+      <h3><a href="#">Most Recent Posts</a></h3>
+    </header>
+    <% blogList.forEach(blogMap => { %>
+      <% counter = 0 %>
+      <div class="row 50%" "collapse">
+        <div class="4u">
+          <a href="/<%= blogMap['File'] %>" class="image fit"><img src="<%= blogMap['Image'] %>" alt="" /></a>
+        </div>
+        <div class="8u">
+          <h4><a href="/<%= blogMap['File'] %>"><%= blogMap['Title'] %></a></h4>
+        </div>
+      </div>
+    <% }) %>
+  </section>
+</div>

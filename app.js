@@ -56,6 +56,23 @@ function getFeaturedInfo(){
 	return featuredList;
 }
 
+function getBlogPosts(){
+	blogPosts=[];
+	file = path.join('views', 'pages', 'blogPosts');
+	fileInfo = fs.readFileSync(file).toString().split(os.EOL);
+	var blogPost = {};
+	fileInfo.forEach(line => {
+		if (line == '-') {
+			blogPosts.push(blogPost);
+			blogPost = {};
+		}
+		else {
+			lineSplit = line.split(':');
+			blogPost[lineSplit[0].trim()] = lineSplit[1].trim();
+		}
+	})
+	return blogPosts;
+}
 
 app.get('/', function(request, response) {
   response.render(path.join('pages', 'index'), {});;
@@ -67,7 +84,8 @@ app.get('/:type', function(request, response) {
 	    if (reqType == 'blog') {
 	    	response.render(path.join('pages', reqType), {
 	    		blogList: getBlogsInfo(),
-					featuredList: getFeaturedInfo()
+					featuredList: getFeaturedInfo(),
+					blogPosts: getBlogPosts()
 	    	});
 			} else {
 	    	response.render(path.join('pages', reqType), {});
