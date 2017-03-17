@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var fs = require('fs');
 var path = require('path');
+var os = require("os");
 
 app.set('port', (process.env.PORT || 3000));
 
@@ -14,41 +15,63 @@ app.set('view engine', 'ejs');
 
 
 
-function get_blogs_info(){
-	blogs_list=[]
+function getBlogsInfo(){
+	blogList=[];
 	file = path.join('views', 'pages', 'blog_list');
-	file_info = fs.readFileSync(file).toString().split('\r\n')
-	var blog_info = {}
-	file_info.forEach(line => {
+	fileInfo = fs.readFileSync(file).toString().split(os.EOL);
+	var blogInfo = {};
+	var counter = 0;
+	for (var line of fileInfo) {
 		if (line == '-') {
-			console.log (123);
-			blogs_list.push(blog_info)
-			blog_info = {}
+			blogList.push(blogInfo);
+			counter++;
+			if (counter == 5) {
+				break;
+			}
+			blogInfo = {};
 		}
 		else {
-			line_split = line.split(':')
-			console.log (line_split)
-			blog_info[line_split[0].trim()] = line_split[1].trim()
+			lineSplit = line.split(':');
+			blogInfo[lineSplit[0].trim()] = lineSplit[1].trim();
+		}
+	}
+	return blogList
+}
+
+function getFeaturedInfo(){
+	featuredList=[];
+	file = path.join('views', 'pages', 'featured');
+	fileInfo = fs.readFileSync(file).toString().split(os.EOL);
+	var featuredInfo = {};
+	fileInfo.forEach(line => {
+		if (line == '-') {
+			featuredList.push(featuredInfo);
+			featuredInfo = {};
+		}
+		else {
+			lineSplit = line.split(':');
+			featuredInfo[lineSplit[0].trim()] = lineSplit[1].trim();
 		}
 	})
-	return blogs_list
+	return featuredList;
 }
+
 
 app.get('/', function(request, response) {
   response.render(path.join('pages', 'index'), {});;
 });
 
 app.get('/:type', function(request, response) {
-    reqType = request.params.type
+    reqType = request.params.type;
     if (!reqType.startsWith('favicon')){
 	    if (reqType == 'blog') {
 	    	response.render(path.join('pages', reqType), {
-	    		blogs_list: get_blogs_info()
+	    		blogList: getBlogsInfo(),
+					featuredList: getFeaturedInfo()
 	    	});
-	    }
-	    else {
+			} else {
 	    	response.render(path.join('pages', reqType), {});
-		}
+			}
 	}
 });
 
