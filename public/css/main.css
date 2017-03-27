@@ -2076,6 +2076,39 @@
 			font-size: 1.25em;
 		}
 
+		.icon-footer {
+			text-decoration: none;
+		}
+
+			.icon-footer:before {
+				display: inline-block;
+				font-family: FontAwesome;
+				font-size: 1.25em;
+				text-decoration: none;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			.icon-footer > .label {
+				display: none;
+			}
+
+			.icon-footer.circled {
+				position: relative;
+				display: inline-block;
+				background: #2b252c;
+				color: #fff;
+				border-radius: 100%;
+				width: 3em;
+				height: 3em;
+				line-height: 3.25em;
+				text-align: center;
+				font-size: 1.25em;
+			}
+
 			header .icon.circled {
 				margin: 0 0 2em 0;
 			}
@@ -2443,6 +2476,7 @@ body.magazine.is-loading #header:after {
 			color: rgba(128, 128, 128, 0.75);
 			font-size: 0.8em;
 			cursor: default;
+			margin: 5px 0 5px 0;
 		}
 
 			#footer .copyright a {
@@ -2627,7 +2661,7 @@ body.magazine.is-loading #header:after {
 					padding-right: 2em;
 				}
 
-				body.homepage #header:after {
+				body.homepage #header :after {
 					content: '';
 					background: #000000;
 					display: block;
