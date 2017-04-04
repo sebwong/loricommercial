@@ -133,4 +133,5 @@ body.homepage.is-loading #header:after {
   width: 50%;
   margin: 0 auto;
   margin-top: 75px;
+  column-count: 4;
 }
