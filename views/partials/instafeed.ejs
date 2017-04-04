@@ -1,0 +1,15 @@
+<script src="js/instafeed.min.js"></script>
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+        clientId: 'e8b0102a434c44c083a00621cd7d5be9',
+        accessToken: '4603847953.e8b0102.4ad0a05041ff4810af21fc4388ca1d80',
+        get:'user',
+        userId: '4603847953',
+        limit: 16,
+        template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>'
+    });
+    feed.run();
+</script>
+
+<div id="instafeed"></div>

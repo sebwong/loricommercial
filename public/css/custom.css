@@ -124,3 +124,13 @@ body.homepage #header:after {
 body.homepage.is-loading #header:after {
  opacity: 1;
 }
+
+#instafeed a {
+  padding: 10px;
+}
+
+#instafeed {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 75px;
+}
