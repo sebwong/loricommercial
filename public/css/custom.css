@@ -36,6 +36,12 @@
   float: right;
 }
 
+.icon-follow {
+  max-width: 3%;
+  margin-top:3%;
+  background: none;
+}
+
 .line {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -140,4 +146,8 @@ body.homepage.is-loading #header:after {
   background: #fff;
   margin: 0 0 0 0;
   padding: 6em 0 6em 0;
+}
+
+.magcontent {
+  min-height: calc(100vh - 50px);
 }
