@@ -44,14 +44,14 @@
 
 .line {
   padding-top: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 5em;
   width: 40%;
   margin: auto;
   display: block;
 }
 
 #form {
-  margin: 10em;
+  margin: 20em;
 }
 
 #submit {
@@ -150,4 +150,57 @@ body.homepage.is-loading #header:after {
 
 .magcontent {
   min-height: calc(100vh - 50px);
+}
+
+.aboutstyle1 {
+  background: #e1e1e3;
+  display: inline-block;
+}
+
+.aboutstyle2 {
+  background: #fff;
+  display: inline-block;
+}
+
+.img-about1 {
+  max-width: 40%;
+  margin: 2% 7% 2% 2%;
+  float: left;
+  position: relative;
+}
+
+.img-about2 {
+  max-width: 40%;
+  margin: 2% 2% 2% 7%;
+  float: right;
+}
+
+.about-text1 {
+  margin: 8% 7% 7% 20%;
+}
+
+.about-text2 {
+  max-width: 40%;
+  margin: 9% 3% 7% 7%;
+  float: left;
+}
+
+.input {
+  font-size: 14px;
+}
+
+input::-webkit-input-placeholder {
+color: #d5d5d5 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: #d5d5d5 !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #d5d5d5 !important;
+}
+
+input:-ms-input-placeholder {
+color: #d5d5d5 !important;
 }
