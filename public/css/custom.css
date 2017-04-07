@@ -190,7 +190,7 @@ body.homepage.is-loading #header:after {
 }
 
 .input {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 input::-webkit-input-placeholder {
