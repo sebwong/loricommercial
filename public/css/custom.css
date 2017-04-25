@@ -37,9 +37,11 @@
 }
 
 .icon-follow {
-  max-width: 3%;
-  margin-top:3%;
+  width: 3%;
+  margin: auto;
   background: none;
+  display: block;
+  position:relative;
 }
 
 .icon-social {
@@ -146,6 +148,10 @@ body.homepage.is-loading #header:after {
   column-count: 4;
 }
 
+#instafeed1 {
+  margin: auto;
+}
+
 .wrapper.style3 {
   background: #fff;
   margin: 0 0 0 0;
@@ -171,21 +177,27 @@ body.homepage.is-loading #header:after {
   margin: 2% 7% 2% 2%;
   float: left;
   position: relative;
+  display: block;
 }
 
 .img-about2 {
   max-width: 40%;
   margin: 2% 2% 2% 7%;
-  float: right;
+  float: right !important;
+  position: relative;
+  display: inline-block;
 }
 
 .about-text1 {
   margin: 8% 7% 7% 20%;
+  display: block;
 }
 
 .about-text2 {
+  width: 40%;
   margin: 9% 3% 7% 7%;
-  float: none;
+  float: left;
+  display: inline-block;
 }
 
 .input {
