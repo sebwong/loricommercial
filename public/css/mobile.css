@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+  #homepage {
+    min-height: 1200px;
+  }
+	.text {
+    font-size: 75%
+}
+	.line {
+	max-width: 50%;
+}
+
+  .about-text1 {
+  font-size: 75%;
+  margin: 5% 10% 5% 10%;
+}
+
+   .img-about1 {
+     max-width: 100%;
+   }
+
+   .about-text2 {
+     font-size: 75%;
+     margin: 5% 10% 5% 10%;
+     float: right;
+   }
+
+   .img-about2 {
+     max-width: 100%;
+     float: left;
+     position: relative;
+   }
+
+   .container {
+     max-width: 100%
+   }
+
+   .icon {
+     max-width:20%;
+   }
+
+   #contact-title {
+     font-size:250%;
+   }
+
+   #about-title {
+     font-size:250%;
+   }
+
+
+}
