@@ -3,10 +3,11 @@
     min-height: 1200px;
   }
 	.text {
-    font-size: 75%
+    font-size: 75%;
+    margin: 5% 10% 5% 10%;
 }
 	.line {
-	max-width: 50%;
+	max-width: 75%;
 }
 
   .about-text1 {
