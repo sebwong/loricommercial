@@ -4,11 +4,18 @@
   }
 	.text {
     font-size: 80%;
-    margin: 5% 10% 5% 10%;
+    margin: 10% 10% 5% 10%;
 }
 	.line {
 	max-width: 75%;
 }
+
+  .aboutstyle2 {
+    display: -webkit-flex; /* Safari */
+-webkit-flex-direction: column-reverse; /* Safari 6.1+ */
+display: flex;
+flex-direction: column-reverse;
+  }
 
   .about-text1 {
   font-size: 75%;
@@ -65,7 +72,6 @@
    .inner {
      height: 768px;
    }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -135,77 +141,6 @@
    .inner {
      height: 480px;
    }
-
-}
-
-@media screen and (max-width: 768px) {
-  #homepage {
-    min-height: 1200px;
-  }
-	.text {
-    font-size: 80%;
-    margin: 5% 10% 5% 10%;
-}
-	.line {
-	max-width: 75%;
-}
-
-  .about-text1 {
-  font-size: 75%;
-  margin: 5% 10% 5% 10%;
-}
-
-   .img-about1 {
-     max-width: 100%;
-   }
-
-   .about-text2 {
-     font-size: 75%;
-     margin: 5% 10% 5% 10%;
-     width: 80%;
-   }
-
-   .img-about2 {
-     max-width: 100%;
-     position: relative;
-   }
-
-   .container {
-     max-width: 100%
-   }
-
-   .icon {
-     max-width:20%;
-   }
-
-   #contact-title {
-     font-size:250%;
-   }
-
-   #about-title {
-     font-size:200%;
-     margin-top: 5%;
-   }
-
-   #form {
-     min-width: 70%;
-     max-width: 80%;
-     margin: auto;
-   }
-
-   #instafeed1 {
-     display: none;
-   }
-
-   .icon-follow {
-     width: 10%;
-     margin-bottom: 20%;
-   }
-
-   .inner {
-     height: 768px;
-   }
-
 }
 
 @media screen and (max-width: 640px) {
@@ -214,7 +149,7 @@
   }
 	.text {
     font-size: 80%;
-    margin: 5% 10% 5% 10%;
+    margin: 10% 10% 5% 10%;
 }
 	.line {
 	max-width: 75%;
@@ -275,5 +210,5 @@
    .inner {
      height: 640px;
    }
-
 }
+
