@@ -152,6 +152,7 @@ flex-direction: column-reverse;
    .inner {
      height: 480px;
    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -227,9 +228,5 @@ flex-direction: column-reverse;
      height: 640px;
    }
 
-   .issuuembed {
-     width:75%;
-     height:300px;
-   }
 }
 
