@@ -207,7 +207,7 @@ flex-direction: column-reverse;
      font-size:200%;
      margin-top: 5%;
    }
-   
+
    #form {
      min-width: 70%;
      max-width: 80%;
@@ -225,6 +225,11 @@ flex-direction: column-reverse;
 
    .inner {
      height: 640px;
+   }
+
+   .issuuembed {
+     width:75%;
+     height:200px;
    }
 }
 
