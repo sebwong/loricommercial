@@ -1,5 +1,5 @@
 #about-title {
-  margin: 100px 0px 0px 0px;
+  margin: 7% 0px 0px 0px;
   font-family: Raleway, sans-serif;
   font-size: 50px;
   text-align: center;
@@ -8,13 +8,19 @@
 #contact-title {
   font-family: Raleway, sans-serif;
   font-size: 50px;
-  color: #333;
   text-align: center;
-  margin-top:150px;
+  margin: 14% 0px 0px 0px;
 }
 
 #blog-title {
-  margin: 150px 0px 0px 0px;
+  margin: 7% 0px 0px 0px;
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+#magazine-title {
+  margin: 4% 0 5% 0;
   font-family: Raleway, sans-serif;
   font-size: 50px;
   text-align: center;
