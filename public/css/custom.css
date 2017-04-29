@@ -225,3 +225,32 @@ color: #d5d5d5 !important;
 input:-ms-input-placeholder {
 color: #d5d5d5 !important;
 }
+
+.source-text {
+  font-size: 10px;
+}
+
+.bloglist {
+  padding-left: 3%;
+  margin-bottom: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.blogloca {
+  font-size: 12px;
+  margin-bottom: 5%;
+}
+
+.blogimg {
+  max-width: 85%;
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+.p-events {
+  padding-left: 3%;
+  margin-top: -4%;
+}
