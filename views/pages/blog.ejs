@@ -1,6 +1,11 @@
 <% include ../partials/header.ejs %>
 <% include ../partials/nav.ejs %>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHQ45HT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!-- Main -->
 <div class="wrapper style1">
 	<div class="row">
@@ -21,7 +26,7 @@
 				<% blogPosts.forEach(blogPostMap => { %>
 					<article id="main">
 						<header>
-							<h2><a href="/<%= blogPostMap['File']%>"><%= blogPostMap['Title']%></a></h2>						
+							<h2><a href="/<%= blogPostMap['File']%>"><%= blogPostMap['Title']%></a></h2>
 							<p>
 								<%= blogPostMap['Date'] %>
 							</p>
@@ -36,9 +41,9 @@
 					</article>
 				<% }) %>
 			</div>
-			
+
 			<% include ../partials/mostrecent.ejs %>
-			
+
 		</div>
 		<hr />
 		<!-- Begin MailChimp Signup Form -->
