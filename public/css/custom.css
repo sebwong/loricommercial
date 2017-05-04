@@ -254,3 +254,9 @@ color: #d5d5d5 !important;
   padding-left: 3%;
   margin-top: -4%;
 }
+
+ul.blog {
+  list-style: disc;
+  padding-left: 4em;
+  margin: 2% 0% 2% 0;
+}
