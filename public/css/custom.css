@@ -260,3 +260,9 @@ ul.blog {
   padding-left: 4em;
   margin: 2% 0% 2% 0;
 }
+
+.blogvid {
+  width: 85%;
+  height: 100%;
+  margin: auto;
+}
