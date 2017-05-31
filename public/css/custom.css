@@ -263,6 +263,8 @@ ul.blog {
 
 .blogvid {
   width: 85%;
-  height: 100%;
+  height: 100vw;
   margin: auto;
+  padding-left: 3%;
+  padding-bottom: 1%;
 }
