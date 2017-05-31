@@ -232,7 +232,7 @@ color: #d5d5d5 !important;
 
 .bloglist {
   padding-left: 3%;
-  margin-bottom: 0;
+  margin-bottom: 2%;
   display: inline-block;
   position: relative;
 }
@@ -263,7 +263,7 @@ ul.blog {
 
 .blogvid {
   width: 85%;
-  height: 100vw;
+  height: 525vw;
   margin: auto;
   padding-left: 3%;
   padding-bottom: 1%;
